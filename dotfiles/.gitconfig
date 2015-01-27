@@ -3,3 +3,5 @@
 	email = ansellchiu@gmail.com
 [alias]
     branches = branch -a
+[push]
+	default = simple
