@@ -1,0 +1,5 @@
+[user]
+	name = Ansell Chiu
+	email = ansellchiu@gmail.com
+[alias]
+    branches = branch -a
