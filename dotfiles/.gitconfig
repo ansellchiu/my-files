@@ -3,5 +3,16 @@
 	email = ansellchiu@gmail.com
 [alias]
     branches = branch -a
+    gene-clone = "!f() { git clone chiua@geneweaver:/u02/geneweaver/sites/git/$1.git; }; f"
 [push]
 	default = simple
+[url "https://"]
+	insteadOf = git://
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true

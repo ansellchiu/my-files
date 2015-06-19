@@ -11,11 +11,14 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+## php-version setup
+source $(brew --prefix php-version)/php-version.sh && php-version 5
 ## Source RVM into zsh
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
 # prompt settings
 autoload -Uz promptinit
 promptinit
-## set prompt to `cloud`
-prompt cloud
+
+# pull in personal aliases
+source ~/my-files/dotfiles/.alias
